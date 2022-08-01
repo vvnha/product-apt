@@ -1,0 +1,77 @@
+.card-img-top {
+  border-radius: inherit;
+  transition: all ease-in-out 0.4s;
+  object-fit: contain;
+}
+
+.product-card {
+  margin: 3rem;
+}
+
+.post-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-item:hover .card-img-top {
+  transform: scale(1.1);
+  object-fit: contain;
+}
+
+.post-item .post-item-menu {
+  position: absolute;
+  transition: transform 0.8s ease;
+
+  align-items: flex-end;
+  justify-content: space-between;
+  transform: translate(-20%, -20%);
+}
+
+.post-item:hover .post-item-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  transition: all 0.5s;
+  transform: scale(0.5);
+  transform-origin: top;
+  opacity: 0;
+}
+
+.post-item-menu .menu-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #444;
+
+  transition: all 0.35s;
+  opacity: 0.7;
+}
+
+.posts-section .post-item-menu .menu-item:hover {
+  color: white;
+  background-color: black;
+  opacity: 1;
+}
+
+.price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.post-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnGroup {
+  width: 100%;
+}
